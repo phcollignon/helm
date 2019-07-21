@@ -1,0 +1,12 @@
+dependencies:
+- name: backend
+  repository: http://127.0.0.1:8879/charts
+  version: 1.2.2
+- name: frontend
+  repository: http://127.0.0.1:8879/charts
+  version: 1.2.1
+- name: mongodb
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 6.1.1
+digest: sha256:96f8f3de6562ba8ab7da79fce043984f83ca7e651ca42230476dcd50efd50003
+generated: 2019-07-13T22:39:15.714361807+02:00

@@ -1,0 +1,12 @@
+dependencies:
+- name: backend
+  repository: http://127.0.0.1:8879/charts
+  version: 1.2.2
+- name: frontend
+  repository: http://127.0.0.1:8879/charts
+  version: 1.2.1
+- name: database
+  repository: http://127.0.0.1:8879/charts
+  version: 1.2.2
+digest: sha256:e42ebc9b13983fffed952e757a1542f4c7a963cd41a2fa5b5f6e99c6c5c38d84
+generated: 2019-07-06T18:12:30.365427404+02:00
