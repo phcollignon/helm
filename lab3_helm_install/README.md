@@ -14,8 +14,8 @@ minikube start
 ```
 ## Helm installation
 ```
-curl -LO https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-linux-amd64.tar.gz
-tar -zxvf helm-v2.13.1-linux-amd64.tar.gz
+curl -LO https://storage.googleapis.com/kubernetes-helm/helm-v2.14.3-linux-amd64.tar.gz
+tar -zxvf helm-v2.14.3-linux-amd64.tar.gz
 sudo mv linux-amd64/helm /usr/local/bin/helm
 
 helm version --short
@@ -29,14 +29,14 @@ kubectl get all | grep nginx-demo
 ```
 ## Helm local tiller
 ```
-curl -LO https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-linux-amd64.tar.gz 
-tar -zxvf helm-v2.13.1-linux-amd64.tar.gz
+curl -LO https://storage.googleapis.com/kubernetes-helm/helm-v2.14.3-linux-amd64.tar.gz 
+tar -zxvf helm-v2.14.3-linux-amd64.tar.gz
 sudo mv linux-amd64/tiller /usr/local/bin/tiller
 tiller
 
 sudo mv linux-amd64/helm /usr/local/bin/helm
 helm init --client-only
-export HELM_HOME=/home/me/.helm
+export HELM_HOME=/home/$(whoami)/.helm
 helm version --short
 export HELM_HOST=localhost:44134
 helm version --short
