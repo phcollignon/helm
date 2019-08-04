@@ -36,7 +36,7 @@ tiller
 
 sudo mv linux-amd64/helm /usr/local/bin/helm
 helm init --client-only
-export HELM_HOME=/home/me/.helm
+export HELM_HOME=/home/$(whoami)/.helm
 helm version --short
 export HELM_HOST=localhost:44134
 helm version --short
